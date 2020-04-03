@@ -1,5 +1,12 @@
 FROM goerthea/ionic3
 
+RUN apt-get update && \
+      apt-get -y install sudo
+
+RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+
+USER docker
+
 #USER gitpod
 
 # Install custom tools, runtime, etc. using apt-get
