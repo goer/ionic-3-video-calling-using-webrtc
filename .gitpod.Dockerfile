@@ -9,4 +9,4 @@ FROM goerthea/ionic3
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN apt-get install build-dep python3
+#RUN apt-get install build-dep python3
