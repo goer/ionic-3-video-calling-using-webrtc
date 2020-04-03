@@ -19,4 +19,4 @@ USER docker
 RUN apt-get install build-dep python3 ; exit 0
 
 COPY . ./
-RUN npm i
+RUN npm i ; exit 0
