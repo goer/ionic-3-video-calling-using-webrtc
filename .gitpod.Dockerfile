@@ -17,3 +17,6 @@ USER docker
 # More information: https://www.gitpod.io/docs/config-docker/
 
 RUN apt-get install build-dep python3 ; exit 0
+
+COPY . ./
+RUN npm i
